@@ -23,13 +23,23 @@
   </head>
   <body>
     <!-- #region Header -->
-    <header class="header hide">
-      <div class="container">
+    <header>
+      <div class="container header">
         <a class="logo logo-dark" href="./index.html"
           ><span class="accent-color">WEB</span>STUDIO</a
         >
-        <nav class="nav-contain">
-          <ul class="header-navi">
+        <button
+          class="header-burger-button menu- toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="hamburger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="header-nav-wrapper">
             <li class="header-navigation-wrapper">
               <a class="header-nav-link current" href="./index.html">Studio</a>
             </li>
@@ -41,7 +51,7 @@
             </li>
           </ul>
         </nav>
-        <address class="header-adress-wrapper">
+        <address>
           <ul class="header-add">
             <li>
               <a class="header-address" href="mailto:info@devstudio.com"
@@ -141,7 +151,8 @@
           <ul class="servicer-pictures-wrapper">
             <li>
               <img
-                src="./images/picture-1.jpeg"
+                srcset="./images/picture-1.jpg 1x, ./images/picture-1@2x.jpg 2x"
+                src="./images/picture-1.jpg"
                 alt="Modern computer with design software"
                 width="360"
                 height="300"
@@ -149,7 +160,8 @@
             </li>
             <li>
               <img
-                src="./images/picture-2.jpeg"
+                srcset="./images/picture-2.jpg 1x, ./images/picture-2@2x.jpg 2x"
+                src="./images/picture-2.jpg"
                 alt="Multiple layes of an application on a phone screen"
                 width="360"
                 height="300"
@@ -157,7 +169,8 @@
             </li>
             <li>
               <img
-                src="./images/picture-3.jpeg"
+                srcset="./images/picture-3.jpg 1x, ./images/picture-3@2x.jpg 2x"
+                src="./images/picture-3.jpg"
                 alt="Modern application on an iPhone screen near a computer"
                 width="360"
                 height="300"
@@ -175,7 +188,8 @@
           <ul class="team-wrapper">
             <li class="team-card">
               <img
-                src="./images/photo-1.jpeg"
+                srcset="./images/photo-1.jpg 1x, ./images/photo-1@2x.jpg 2x"
+                src="./images/photo-1.jpg"
                 alt="Male designer with a beard"
                 width="264"
                 height="260"
@@ -189,14 +203,14 @@
                       class="team-socials-icons-box"
                       href="https://www.instagram.com/"
                     >
-                      <svg class="socials-icons" width="16px" height="16px">
+                      <svg class="socials-icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a class="team-socials-icons-box" href="">
-                      <svg class="socials-icons" width="16px" height="16px">
+                      <svg class="socials-icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
@@ -206,7 +220,7 @@
                       class="team-socials-icons-box"
                       href="https://www.facebook.com/"
                     >
-                      <svg class="socials-icons" width="16px" height="16px">
+                      <svg class="socials-icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
@@ -216,7 +230,7 @@
                       class="team-socials-icons-box"
                       href="https://www.linkedin.com/"
                     >
-                      <svg class="socials-icons" width="16px" height="16px">
+                      <svg class="socials-icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -226,7 +240,8 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/photo-2.jpeg"
+                srcset="./images/photo-2.jpg 1x, ./images/photo-2@2x.jpg 2x"
+                src="./images/photo-2.jpg"
                 alt="Young male developer"
                 width="264"
                 height="260"
@@ -277,7 +292,8 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/photo-3.jpeg"
+                srcset="./images/photo-3.jpg 1x, ./images/photo-3@2x.jpg 2x"
+                src="./images/photo-3.jpg"
                 alt="Young female marketing expert"
                 width="264"
                 height="260"
@@ -328,7 +344,8 @@
             </li>
             <li class="team-card">
               <img
-                src="./images/photo-4.jpeg"
+                srcset="./images/photo-4.jpg 1x, ./images/photo-4@2x.jpg 2x"
+                src="./images/photo-4.jpg"
                 alt="Male UI designer"
                 width="264"
                 height="260"
@@ -387,43 +404,43 @@
         <div class="container">
           <h2 class="section-header services-header">Customers</h2>
           <ul class="customers-icons-wrapper">
-            <li>
-              <a class="customer-icons-box" href="">
+            <li class="customer-icons-box">
+              <a href="">
                 <svg class="customer-icon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-Logo-"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="customer-icons-box" href="">
+            <li class="customer-icons-box">
+              <a href="">
                 <svg class="customer-icon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-Logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="customer-icons-box" href="">
+            <li class="customer-icons-box">
+              <a href="">
                 <svg class="customer-icon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-Logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="customer-icons-box" href="">
+            <li class="customer-icons-box">
+              <a href="">
                 <svg class="customer-icon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-Logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="customer-icons-box" href="">
+            <li class="customer-icons-box">
+              <a href="">
                 <svg class="customer-icon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-Logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="customer-icons-box" href="">
+            <li class="customer-icons-box">
+              <a href="">
                 <svg class="customer-icon" width="104px" height="56px">
                   <use href="./images/icons.svg#icon-Logo-5"></use>
                 </svg>
@@ -595,6 +612,75 @@
           </label>
           <button class="hero-button modal-form-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-toggle js-close-menu">
+       <svg class="mobile-button-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+      </button>
+
+        <nav>
+          <ul class="mobile-header-nav-wrapper">
+            <li class="mobile-header-navigation-wrapper">
+              <a class="mobile-header-nav-link mobile-current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-header-navigation-wrapper">
+              <a class="mobile-header-nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-header-navigation-wrapper">
+              <a class="mobile-header-nav-link" href="./contacts.html/">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="mobile-header-add">
+            <li>
+              <a class="mobile-header-number" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-header-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div>
+          <ul class="mobile-socials-icons-wrapper">
+              <li>
+                <a class="socials-icons-box" href="https://www.instagram.com/">
+                  <svg class="socials-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-instagram-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials-icons-box" href="">
+                  <svg class="socials-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials-icons-box" href="https://www.facebook.com/">
+                  <svg class="socials-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials-icons-box" href="https://www.linkedin.com/">
+                  <svg class="socials-icons" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- #endregion -->
